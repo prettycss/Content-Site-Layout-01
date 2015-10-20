@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="robots" content="index,follow" />
+<title>Example Site Title</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgYFFis2RJAJDRU7AAAADAAAAAsAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlLTlZaIa9+Q4ZJGkAAAAmAAAAGwAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHTE7sMEg9f/AA0ZUAAAADAAAAAsAAAAEgAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIs/45IML+/wBqvdoABAkmAAAAMQAAADYAAAAhAAAACgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABO5/lgZvP7/AFecrQAAAAYAAAAmAAAAOAAAADEAAAAZAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIMT+iBCy/v8ARX2KAAAAAAAAABYAAAAuAAAAOAAAACoAAAASAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAryv6xCaT9/wBTklwAAAAAAAAACAAAAB4AAAA0AAAAOAAAACMAAAALAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAABKz+GC7K/eAAlfv3AF2fKAAAAAAAAAADAAAAEQAAACsAAAA5AAAAJAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMs/4yL8j8/QCM9eAAa7USAAAAAAAAAAAAAAAGAAAAFwAAABUAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABa8/lEnwPn/AIfwuAB90QMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKMX+exiw9f8AgemQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsz/65Eaby/yhdgVsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ7LgELDP1tiompH/ODdFLwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2sKwvtsTc9kRv9d0GMvcFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE5t8kJDbP6eDzn+AQAAAAAAAAAAP/8AAAP/AACB/wAAwH8AAMAfAADgDwAA8QMAAPiAAAD4QAAA/DAAAP4fAAD/HwAA/48AAP+HAAD/wwAA/+MAAA==" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+<style type="text/css">
+a:link { color: blue; }
+a:visited { color: darkblue; }
+a:active { color: red; }
+a:hover { color: red; }
+</style>
+</head>
+<body style="margin:0px;padding:0px;margin-left:25px;margin-top:11px;margin-right:15px;margin-bottom:20px;color:darkblue;">
+<table style="width:100%;padding:0px;border:none;border-spacing:0;border-collapse:collapse;">
+<tr>
+ <!-- Site Logo -->
+ <td style="width:140px;height:50px;color:navy;padding-right:2px;text-align:left;vertical-align:top;"><a href="./index.html" title="Example Site Logo"><img src="data:image/jpeg;base64,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" width="120" height="50" alt="" style="border:0;"></a></td>
+ <!-- Title -->
+ <td style="text-align:center;vertical-align:middle;"><h1 style="margin:0px;padding:0px;font-family:'Open Sans';font-size:33px;color:navy;font-weight:700;">Example Site Title</h1></td>
+ <!-- Space -->
+ <td style="width:165px;text-align:center;vertical-align:middle;color:navy;">&nbsp;</td>
+</tr>
+<tr>
+ <!-- Breadcrumbs -->
+ <td colspan="3" style="font-family:'Open Sans';font-size:14px;color:#000080;text-align:justify;vertical-align:middle;padding-top:3px;padding-bottom:10px;"><a href="./index.html">Example Site Title</a> &middot; Home</td>
+</tr>
+<tr>
+ <td style="font-family:'Open Sans';font-size:15px;line-height:21px;color:navy;padding-right:2px;text-align:left;vertical-align:top;">
+ <!-- Main Menu -->
+ <ul style="margin:0px;padding:0px;margin-bottom:22px;font-family:'Open Sans';font-size:15px;line-height:21px;color:navy;text-align:left;list-style:none;">
+  <li>&middot;&nbsp;<a href="./index.html" title="Home">Home</a></li>
+  <li>&middot;&nbsp;<a href="#">Section 1</a></li>
+  <li>&middot;&nbsp;<a href="#">Section 2</a></li>
+  <li>&middot;&nbsp;<a href="#">Section 3</a></li>
+  <li>&middot;&nbsp;<a href="#">Section 4</a></li>
+  <li>&middot;&nbsp;<a href="#">Section 5</a></li>
+  <li>&middot;&nbsp;<a href="#">Link to us</a></li>
+  <li>&middot;&nbsp;<a href="#">Contact</a></li>
+  <li>&middot;&nbsp;<a href="#">What's new</a></li>
+  <li>&middot;&nbsp;<a href="#">Site map</a></li>
+ </ul>
+ <!-- Submenu -->
+ <div style="font-weight:bold;">Most popular:</div>
+ <ul style="margin:0px;padding:0px;margin-bottom:22px;font-family:'Open Sans';font-size:15px;line-height:21px;color:navy;text-align:left;list-style:none;">
+  <li>&middot;&nbsp;<a href="#">Example Link 1</a></li>
+  <li>&middot;&nbsp;<a href="#">Example Link 2</a></li>
+  <li>&middot;&nbsp;<a href="#">Example Link 3</a></li>
+  <li>&middot;&nbsp;<a href="#">Example Link 4</a></li>
+  <li>&middot;&nbsp;<a href="#">Example Link 5</a></li>
+ </ul>
+ <!-- Submenu -->
+ <div style="font-weight:bold">Optional Section:</div>
+ <ul style="margin:0px;padding:0px;margin-bottom:22px;font-family:'Open Sans';font-size:15px;line-height:21px;color:navy;text-align:left;list-style:none;">
+  <li>&middot;&nbsp;<a href="#">Example Link 1</a></li>
+  <li>&middot;&nbsp;<a href="#">Example Link 2</a></li>
+  <li>&middot;&nbsp;<a href="#">Example Link 3</a></li>
+  <li>&middot;&nbsp;<a href="#">Example Link 4</a></li>
+  <li>&middot;&nbsp;<a href="#">Example Link 5</a></li>
+ </ul>
+ <!-- Submenu -->
+ <div style="font-weight:bold">Optional Section:</div>
+ <ul style="margin:0px;padding:0px;font-family:'Open Sans';font-size:15px;line-height:21px;color:navy;text-align:left;list-style:none;">
+  <li>&middot;&nbsp;<a href="#">Example Link 1</a></li>
+  <li>&middot;&nbsp;<a href="#">Example Link 2</a></li>
+  <li>&middot;&nbsp;<a href="#">Example Link 3</a></li>
+  <li>&middot;&nbsp;<a href="#">Example Link 4</a></li>
+  <li>&middot;&nbsp;<a href="#">Example Link 5</a></li>
+ </ul>
+ <!-- Horizontal Rule -->
+ <hr style="margin:0px;padding:0px;width:90px;color:gainsboro;margin-top:23px;margin-bottom:13px;margin-left:17px;">
+ <!-- Google SiteSearch -->
+ <form style="margin:0px;padding:0px;padding-bottom:1px;" name="google_search_form" method="get" action="http://www.google.com/search">
+  <!-- Google Logo -->
+  <a style="display:block;border:none;height:32px;text-align:center;" href="http://www.google.com/"><img src="data:image/gif;base64,R0lGODlhSwAgAPfYAAAAhAADbAAPuQAMmwAJcgAPowAbxwAZtgAbqQAUeAAnxAAtzwAouQEglwsicyw7cXR7lQAx1wAuxwAoqRM5uBUyixk6o0BOe2BqiquzzShGmjNKj0hZjHaHtYeVvIKLo7K4ygE4vhhFsShSt0BhtVlzsWR/wVRpn2h6qG97mqKtyJOarM7Y8K2yvwpK1HWRz5Cq4uHk6w5Y5jFiyUp3zmuT52SH0WuO2L/F0eLo9La4vPn7/+Dh43mb2Iek24KbyJuy27K90cbO3FqJ1nSj8ZKt2qu93LXI5snV6dfc5L3O5d3h5fL1+Pz9/t3e3+vx9fr9/+Xo6unt7/b4+dTb3fL29vz//8/R0fn++6q0rKawqABmAABgAAFtARhIGD+HPzZeNn/Gf47DjpzTnGV+ZZGokcHcwYmYiZ+pn+n26djk2Pf59/Hy8e7v7hWBFGC8X4DIf4jJhZLLkOTm4f//+f7++/r69/////b29Nvb2fr6+fTy6PLWZNrKiee2CvDEKPDckPa/CfC7E+OyEt/c0uSmAIxtGMuoQMqzcKCRZdjOsb+5qLOvo/qyAM6VALuKCIZoH766sPj28aJwAXRQAuzq5t7c2I1bAO7s6enk3a+lmfn39dfV08fGxebTyfbz8uKrm9rQzeTc2ty0rOJ7adnJxttPO+lZRdBvYeiUh+axqdQaBdYpE8taS8WJgujAu8mtqq8QAMITAck2J7g2KbZRSLJcVa9uaNKUj/DPzNQLAIg3Mp1CPIdKRteinta7uccGAIQcF2wfHH5MSoxgXtGsq7KXlr2lpNcAANQDALwBALIAAKcAAJMDAHUAAFgAAIwDAWgFA3gYF8a3t9nT0/35+erp6ezs7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAANgALAAAAABLACAAAAj/ALEJHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3IgQypQmHBeuMSPnjRs1GKcUoUGCxIgZN47cCWkQSxoxbshgVCICRZKZeoJYWNBACE2DY7qcuXhkAoiDDx60OVow6dKKSUJ8QIhDD9WCcrqgsTgkAZ2Hm1SlSjVqk8E9gOIq8lrwCQsqTqgYYYFNzpaxA1+tfSVQh2EdPHQUXOLiwsNStFz9ciWLFSyCfQ4pUoTIjyBFA+30MNHBhQwRHXJgi7NFi8BPrW4Vu6WL1hNsig8XNBICg8NQsUINdAJM2TSBfR7tGEioUKFO2O4MOSHQCYMGTgSydm0l9kBczIbh/x6vmCARBr4ZVjG1q6CrZNKwzfGjqSCiRpCwKQlxZeAPA45hAwcXrr3CjBQCZdKKMMYs1IMEDzQEyirEFCSKLs7EAIgjkRRESCOXtEFEAdAJtIQCDggExxZZYEMKNNe8gootxzEURAQJ7GHQE0gksQQSd5ACjHgE3cFKNNPw8QgjBUERyCWc1KAABKEhEOCALZ7SzDG+iPIQGwsgsBVBOdxQAg0uaIANKskIY5Ap0VDDhyOJGPQHJZUIIUACbAgkRADZYRMGFy22skx9EZlgQAOWEAQSNj8cQOUoyEBDRUGzPINNH/gZNAglAnUQQAVHKDECDgOF0Ro2uCATzKMPff9iwQEUxGBQERNQiU0ty/RCECbQNMiEI0sSlMkkiwxkTQZojqldFy2yoYwythQ000JRJFCAAkYU1EMA6VUBDTS4DESLrwIpMskkmQh0xyN1FuRDBBsQ9AYXVx3TzDKzeIJNLrhU05ATHBAwwAg2+ADDCxpwgGp1vThjiyu13IIFQYsYMgkimSFiEBM+HCAACVNgo8cXXoBRxsXGROMMNM3wkgtEmLTwAQoeqCDEtQW18csvkiCUiSKe9DlQHUWQUIIHHzhggAZ1DHTHGgNZQU0pXn4lER5DaGCrQNZYMMAKWtMExAR5FCRFAemVvRENAzRaUANku72RCQJwsFsFZ9kkrZEdGwAwwQ1AAGEDCdf4HRIOKXBwQgdBKC755JRXbvnlNAUEADs=" width="75" height="32" style="border:0" alt="Google"></a>
+  <!-- Search Box -->
+  <div style="text-align:center;padding-top:1px;padding-bottom:8px;"><input type="text" name="q" size="11" maxlength="255" value=""></div>
+  <!-- Search Button -->
+  <div style="text-align:center;padding-bottom:4px;"><input type="submit" name="sa" value="Search"></div>
+  <!-- Radio Buttons -->
+  <div style="padding-left:9px;font-size:13px;color:black;" onmouseover="this.style.cursor='pointer'" onclick="document.google_search_form.sitesearch[0].checked=true;"><input type="radio" name="sitesearch" value="your-domain-here.com" checked="checked">Search This Site</div>
+  <div style="padding-left:9px;font-size:13px;color:black;" onmouseover="this.style.cursor='pointer'" onclick="document.google_search_form.sitesearch[1].checked=true;"><input type="radio" name="sitesearch" value="">Search The Web</div>
+ </form>
+ <!-- My Yahoo -->
+ <p style="text-align:center;padding-bottom:10px;">
+ <a href="http://add.my.yahoo.com/content?url=http%3A//www.YOUR-DOMAIN-HERE.com/rss_feed.rss" target="_blank"><img src="data:image/gif;base64,R0lGODlhWwARANUAAAAAmd/f3/wZIYmJibS0tF5eXkpz7f1aYAAzzFRUVKPP//w8Q/6fov///w0mmqmpqfx2e/7FyA9C23R0dP/w8fwrMv6NkdTU1Clc5v/l5v7X2P6xs/1uc/1KUczMzJmZmfT09P1/g2ZmZn5+furq6v9mZhgypf/29v///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAUUACgALAAAAABbABEAAAb/wI9wSCwaj8ikcslkoj6NqHRKrVqv2Kx2m/2IoIiweEwGcM/oNNcLNrgNmLhkTneY1fh8mt1AGMYOgQ6Ad3olhxAQFhRnJ4yMWBQZk1EZAgIbU3x+gA0Kg2J2UwQJE1EXCSOoBSANHgkPUREclx2MDCUHHQcRUhkavxkWFQIhURoRERlRFB2XlxWMl8tSm38Igp6CYaJSDwkJBA0TqQ0fCR8gBaZTGpe9FMQLEAwaGg0WlxCyAg0UC88EMGhwKVODDMQsdaCyCQO3KqC6RfmWoMC5ciBEJBiQIEAVBtM2CLDg79KBKBAEWrDQYaGAClJEOjNYaaSAfZq+9HGITYEC7E8+IxZq8I0junKuwEGxEuJZrwYaKlTAmZLDgRILOkQQ8DSKAIALpRzgWoFmlE0SuAXSFojb0G8XRogAgXRcglZX3kmpcFUAo4RRmubDlAzgCZE3ORDLRJKhTgRpQ2kjNAUuCQ8N6o5IkIUYM4CZBHCI0KFCiGQhOGzIwGFXy3tQORwKsQxkCcdgIqttG+ptggtSNHNmSuxlBwYhFm29eQKLI0iRONzrd/axCUHYs0tsQAK4lAskpATwaCWZ+WR68mwCwL69+/fp48vHPb++/TVfmujfz7+/fhEoiCDggAQWaOCBCCao4IIMMhgEADs=" width="91" height="17" alt="Add to My Yahoo!" style="margin:0px;padding:0px;border:0;text-align:center;margin-left:auto;margin-right:auto;"></a><br>
+ <a href="#"><img src="data:image/gif;base64,R0lGODlhGwAPAJEAAGZmZv////9mAAAAACH5BAAAAAAALAAAAAAbAA8AAAI+hI+pG+0P4zNB2IuztoHu/3VABZaXSAopuXIZilWrzL5ejMtufLvtnuL0fsTGqWcCwZKlJTNEkUini6oVUQAAOw==" width="27" height="15" alt="XML" style="border:0;"></a><a href="#"><img src="data:image/gif;base64,R0lGODlhGgAPAJEAAGZmZv////9mAAAAACH5BAAAAAAALAAAAAAaAA8AAAJAhI+pGu0PozNB2IuzFoHuv3VABZaWSHIN5lzt6Z0yl6VurNqrq+OVPXPdRkJajtcjmkqoJRPn1KAkVOriij0UAAA7" width="26" height="15" alt="RSS" style="border:0;"></a>
+ </p>
+ </td>
+ <!-- Main Body -->
+ <td style="border-left:1px solid #C0C0C0;padding-bottom:12px;padding-left:20px;padding-right:20px;font-family:'Open Sans';font-size:18px;color:navy;text-align:justify;vertical-align:top;">
+ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse auctor laoreet ipsum. Pellentesque ligula nunc, porttitor sit amet, lobortis a, rutrum vitae, nisl. Aliquam quis sem vel leo pharetra imperdiet. Maecenas sed erat at sem lacinia pellentesque. In vitae turpis id enim accumsan posuere. Aenean aliquam convallis neque. Curabitur dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas placerat, mi nec auctor dapibus, erat sem volutpat augue, et semper mi nunc vitae arcu. Cras dictum. Vestibulum ullamcorper consectetuer mauris. Pellentesque eu elit et purus sagittis tempor. Nulla facilisi. Proin leo. Integer blandit odio in felis. Nulla facilisi. Integer ac pede. Suspendisse massa leo, dictum ut, nonummy quis, gravida vel, felis.
+ <br><br>
+ Donec porta lacinia enim. Nunc volutpat turpis sit amet nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. In vehicula ornare nisl. Curabitur consectetuer. Maecenas consequat dapibus quam. Aenean ut mi sed odio laoreet blandit. Donec commodo dui ac mauris. Pellentesque risus metus, eleifend a, commodo et, posuere eget, nulla. Proin ac odio. Duis laoreet viverra ipsum. Vivamus nisl dolor, viverra quis, fermentum non, imperdiet in, arcu. Ut quis libero. Mauris eget diam et magna tristique pulvinar. Quisque at est. Sed diam ante, accumsan eget, pharetra ac, fermentum quis, magna. Donec mattis, nunc quis vulputate hendrerit, augue dolor viverra odio, id sodales arcu lacus ac purus. In porttitor sem sit amet augue. 
+ <br><br>
+ Donec rutrum diam egestas arcu. In sit amet pede. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed malesuada rhoncus enim. Cras non enim. Vestibulum malesuada elit id quam. Proin accumsan, urna ac faucibus mollis, est est vulputate massa, sit amet viverra metus metus vitae dolor. Phasellus dictum gravida lacus. Nunc eleifend risus a nunc. Donec vulputate auctor libero. 
+ <br><br>
+ Cras elementum. Vestibulum pellentesque. Suspendisse rhoncus metus eget ipsum. Quisque sodales tempor arcu. Morbi tristique sem. Pellentesque ut magna. Sed iaculis semper velit. Fusce gravida, purus ac pretium faucibus, orci libero sollicitudin lectus, et rutrum lorem sapien nec nisi. Vivamus tortor lorem, gravida sed, dignissim vel, dignissim vel, elit. Cras eget nulla a tortor ullamcorper aliquam. Pellentesque justo. Fusce lacus. Donec quam. Duis malesuada. In orci magna, placerat non, gravida sit amet, posuere ac, urna. Aliquam dictum venenatis leo. Sed quam metus, ultricies et, viverra sit amet, scelerisque ut, arcu. 
+ <br><br>
+ Aliquam fermentum. Vivamus at purus. Vestibulum sit amet nulla. Sed sit amet nisl. Sed faucibus augue ut est. Proin ut arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Sed egestas sagittis justo. Nam tempor pulvinar justo. Morbi ligula. Vivamus mi. Cras et lorem eu mauris dignissim mollis. Proin imperdiet elementum ante. Sed pulvinar rutrum urna. Suspendisse sit amet urna non sapien cursus pulvinar. Mauris pellentesque, velit et malesuada bibendum, dolor odio rutrum augue, quis sagittis leo justo non metus. Integer at velit. Aliquam vitae purus.
+ </td>
+ <!-- Right Column -->
+ <td style="text-align:center;vertical-align:top;color:navy;">
+ <div style="width:160px;height:600px;border:1px dashed black;font-family:'Open Sans';text-align:center;font-size:x-large;">
+ <br><br><br><br><br><br><br><br>160x600<br>ad slot
+ </div>
+ </td>
+</tr>
+ <!-- Footer -->
+ <tr>
+ <td></td>
+ <td>
+ <p style="text-align:center;padding-top:15px;padding-bottom:10px;margin:0px;">
+ <a href="http://add.my.yahoo.com/content?url=http%3A//www.YOUR-DOMAIN-HERE.com/rss_feed.rss" rel="nofollow" target="_blank"><img src="data:image/gif;base64,R0lGODlhWwARANUAAAAAmd/f3/wZIYmJibS0tF5eXkpz7f1aYAAzzFRUVKPP//w8Q/6fov///w0mmqmpqfx2e/7FyA9C23R0dP/w8fwrMv6NkdTU1Clc5v/l5v7X2P6xs/1uc/1KUczMzJmZmfT09P1/g2ZmZn5+furq6v9mZhgypf/29v///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAUUACgALAAAAABbABEAAAb/wI9wSCwaj8ikcslkoj6NqHRKrVqv2Kx2m/2IoIiweEwGcM/oNNcLNrgNmLhkTneY1fh8mt1AGMYOgQ6Ad3olhxAQFhRnJ4yMWBQZk1EZAgIbU3x+gA0Kg2J2UwQJE1EXCSOoBSANHgkPUREclx2MDCUHHQcRUhkavxkWFQIhURoRERlRFB2XlxWMl8tSm38Igp6CYaJSDwkJBA0TqQ0fCR8gBaZTGpe9FMQLEAwaGg0WlxCyAg0UC88EMGhwKVODDMQsdaCyCQO3KqC6RfmWoMC5ciBEJBiQIEAVBtM2CLDg79KBKBAEWrDQYaGAClJEOjNYaaSAfZq+9HGITYEC7E8+IxZq8I0junKuwEGxEuJZrwYaKlTAmZLDgRILOkQQ8DSKAIALpRzgWoFmlE0SuAXSFojb0G8XRogAgXRcglZX3kmpcFUAo4RRmubDlAzgCZE3ORDLRJKhTgRpQ2kjNAUuCQ8N6o5IkIUYM4CZBHCI0KFCiGQhOGzIwGFXy3tQORwKsQxkCcdgIqttG+ptggtSNHNmSuxlBwYhFm29eQKLI0iRONzrd/axCUHYs0tsQAK4lAskpATwaCWZ+WR68mwCwL69+/fp48vHPb++/TVfmujfz7+/fhEoiCDggAQWaOCBCCao4IIMMhgEADs=" width="91" height="17" alt="Add to My Yahoo!" style="margin:0px;padding:0px;border:0;text-align:center;margin-left:auto;margin-right:auto;"></a><br>
+ <a href="#" rel="nofollow"><img src="data:image/gif;base64,R0lGODlhGwAPAJEAAGZmZv////9mAAAAACH5BAAAAAAALAAAAAAbAA8AAAI+hI+pG+0P4zNB2IuztoHu/3VABZaXSAopuXIZilWrzL5ejMtufLvtnuL0fsTGqWcCwZKlJTNEkUini6oVUQAAOw==" width="27" height="15" alt="XML" style="border:0;"></a><a href="#" title="Syndicate our Content via RSS" rel="nofollow"><img src="data:image/gif;base64,R0lGODlhGgAPAJEAAGZmZv////9mAAAAACH5BAAAAAAALAAAAAAaAA8AAAJAhI+pGu0PozNB2IuzFoHuv3VABZaWSHIN5lzt6Z0yl6VurNqrq+OVPXPdRkJajtcjmkqoJRPn1KAkVOriij0UAAA7" width="26" height="15" alt="RSS" style="border:0px;"></a>
+ </p>
+ <hr>
+ </td>
+ <td></td>
+ </tr>
+ <!-- Copyright -->
+ <tr>
+ <td></td>
+ <td style="font-family:'Open Sans';font-size:15px;color:navy;text-align:center;padding-top:5px;padding-bottom:5px;">
+ Copyright &copy; 2015 Example Site Title &middot; <a href="#">Contact</a> &middot; <a href="#">Site Map</a>
+ </td>
+ <td></td>
+ </tr>
+</table>
+</body>
+</html>
